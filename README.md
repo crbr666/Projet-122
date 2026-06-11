@@ -63,7 +63,29 @@ Git est un logiciel de gestion de versions libre et gratuit. Créé par l'auteur
 
 Le site assure également un contrôle d'accès et des fonctionnalités destinées à la collaboration comme le suivi des bugs, les demandes de fonctionnalités, la gestion de tâches et un wiki pour chaque projet.
 
-Pour publier un projet dans GitHub, 
+Pour publier un projet dans GitHub, il est nécessaire de créer un compte avec une adresse mail valide, un nom d'utilisateur et un mot de passe.</br>
+Il est aussi nécessaire d'installer Git.</br>
+Bien que la publication soit possible depuis l'interface web, il est préférable d'installer github-cli afin de pouvoir travailler depuis le terminal.
+
+Les commandes nécessaires à l'utilisation de Git sont:
+```text
+git init
+git add .
+git commit -m "<commentaire>"
+git status
+git remote add origin <url>
+git push -u origin main
+```
+Ces commandes servent, dans l'ordre, à initialiser un dépôt Git, ajouter les fichiers à modifier (avec un point pour ajouter tous les fichiers/dossiers du répertoire), commenter le changement (très important pour la documentation), à lister l'état des fichiers, à définir l'origine du dépôt et à publier dans le dépôt.
+
+Les commandes nécessaires à l'utilisation de github-cli sont :
+```text
+gh auth login
+gh repo create
+gh repo clone
+gh repo view --web
+```
+Elles servent, dans l'ordre, à s'authentifier pour publier sur le dépôt, créer un dépôt en ligne, cloner le dépôt en ligne vers un dossier local et, enfin, à visualiser le dépôt dans une page web.
 
 ## 2. Planifier
 <!-- Décrire sous forme de phrases :
@@ -74,6 +96,34 @@ les étapes de publication ;
 
 les documents à intégrer. -->
 
+Ayant déjà un compte sur github, j'ai pu aller à l'étape d'installation de Git et Github CLI. Pour les installer, je dois installer git et github-cli. Il faudra ensuite que je crée un dépôt sur github "Projet-122" et que je le clone dans mon répertoire à l'aide des commandes CLI.
+
+Les documents à déposer sont dans le cahier des charges avec l'arborescence suivante:
+```text
+Projet-122/
+│ README.md
+│
+├── scripts/
+│   ├── script.sh
+│   ├── script_test.sh
+│   ├── script.ps1
+│   └── script_test.ps1
+│
+├── documentation/
+│   ├── rapport.md
+│   └── manuel_utilisateur.md
+│
+├── diagramme/
+│   ├── diagramme.drawio
+│   └── diagramme.png
+│
+└── logs/
+    └── log_test.txt
+```
+J'ai déjà un dossier prêt avec les fichiers de la séquence précédente. Il faudra donc que je copie ces fichiers dans le répertoire de mon dépôt.</br>
+
+
+
 
 ## 3. Décider
 <!-- Justifier :
@@ -83,6 +133,10 @@ l'organisation retenue ;
 la structure des dossiers ;
 
 les choix de documentation. -->
+Bien que l'interface Web semble efficace, je préfère travailler en CLI (Command Line Interface) afin d'avoir le visuel sur mes fichiers/dossier en local et ceux du dépôt en ligne.
+
+Je prends la décision de créer un nouveau dossier avec une copie des fichiers. Ceci me permettra de publier l'arborescence demandée sans toucher aux fichiers sources. Le dossier du dépôt reste supprimable et je conserve les autres fichiers contenus dans le dossier source.
+
 
 ## 4. Concevoir
 <!-- Créer :
@@ -94,6 +148,11 @@ l'arborescence ;
 le README ;
 
 la publication des fichiers. -->
+
+Mon compte Github étant déjà prêt, j'ai simplement rajouté la 2FA pour sécuriser mon compte.
+J'ai ensuite installé les outils comme décrit dans le chapitre `Planifier` à l'aide du gestionnaire de paquets.
+
+J'ai eu plus de peine avec les commandes pour publier mon dossier. En effet, j'ai utilisé les commandes CLI pour copier mes fichiers, mais j'ai oublié de les renommer. Heureusement, le dépôt se met à jour avec la commande `git push`. Cette commande peut donc servir à déposer des fichiers et les mettre à jour.
 
 ## 5. Tester
 <!-- Vérifier :
@@ -110,6 +169,7 @@ que les liens éventuels fonctionnent.
 
 Documenter les erreurs rencontrées et les corrections apportées. -->
 
+Une fois les commandes de base maitrisées, j'ai ensuite testé de supprimer mon répertoire local pour ensuite le cloner depuis la plateforme web.
 ## 6. Évaluer
 <!-- Répondre aux questions :
 
