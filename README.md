@@ -40,13 +40,27 @@
 
 <div style="page-break-after: always;"></div>
 
+# Table des matières
+- [Dépôt GitHub](#dépôt-github)
+- [Introduction](#introduction)
+- [1. S'informer](#1-sinformer)
+- [2. Planifier](#2-planifier)
+- [3. Décider](#3-décider)
+- [4. Concevoir](#4-concevoir)
+- [5. Tester](#5-tester)
+- [6. Évaluer](#6-évaluer)
+
 ## Dépôt GitHub
 
 https://github.com/crbr666/Projet-122.git
 
 ---
 ## Introduction
-<!-- À Compléter -->
+<!-- À Compléter à la fin !-->
+Dans le cadre du module 122, nous avons découvert et mis en pratique les outils de gestion de versions Git et GitHub. L'objectif de ce module est de publier un projet informatique sur une plateforme de versionnage en ligne, en passant par toutes les étapes d'une démarche structurée : s'informer, planifier, décider, concevoir, tester et évaluer.
+
+
+Nous avons appris à initialiser un dépôt local, à gérer les fichiers avec les commandes Git de base, puis à publier l'ensemble du projet sur GitHub à l'aide de l'interface en ligne de commande. Ce rapport documente l'ensemble de cette démarche, des recherches préliminaires jusqu'aux tests de validation et à l'évaluation critique du travail effectué.
 
 ## 1. S'informer
 <!-- Décrire :
@@ -59,15 +73,15 @@ ce qu'est GitHub ;
 
 les éléments nécessaires à la publication du projet. -->
 
-Git est un logiciel de gestion de versions libre et gratuit. Créé par l'auteur du noyau Linux (Linus Torvald), il est très populaire dabs le dévellopement logiciel et web sous tous les environnements (Microsoft, MacOS, Linux,...). Il est aussi le système à la base du site web GitHub, le plus important hébergeur de code informatique.</br>
+Git est un logiciel de gestion de versions libre et gratuit. Créé par l'auteur du noyau Linux (Linus Torvalds), il est très populaire dans le développement logiciel et web sous tous les environnements (Microsoft, macOS, Linux, ...). Il est aussi le système à la base du site web GitHub, le plus important hébergeur de code informatique.</br>
 
 Le site assure également un contrôle d'accès et des fonctionnalités destinées à la collaboration comme le suivi des bugs, les demandes de fonctionnalités, la gestion de tâches et un wiki pour chaque projet.
 
 Pour publier un projet dans GitHub, il est nécessaire de créer un compte avec une adresse mail valide, un nom d'utilisateur et un mot de passe.</br>
 Il est aussi nécessaire d'installer Git.</br>
-Bien que la publication soit possible depuis l'interface web, il est préférable d'installer github-cli afin de pouvoir travailler depuis le terminal.
+Bien que la publication soit possible depuis l'interface web, il est préférable d'installer GitHub CLI afin de pouvoir travailler depuis le terminal.
 
-Les commandes nécessaires à l'utilisation de Git sont:
+Les commandes nécessaires à l'utilisation de Git sont :
 ```text
 git init
 git add .
@@ -78,7 +92,7 @@ git push -u origin main
 ```
 Ces commandes servent, dans l'ordre, à initialiser un dépôt Git, ajouter les fichiers à modifier (avec un point pour ajouter tous les fichiers/dossiers du répertoire), commenter le changement (très important pour la documentation), à lister l'état des fichiers, à définir l'origine du dépôt et à publier dans le dépôt.
 
-Les commandes nécessaires à l'utilisation de github-cli sont :
+Les commandes nécessaires à l'utilisation de GitHub CLI sont :
 ```text
 gh auth login
 gh repo create
@@ -96,9 +110,9 @@ les étapes de publication ;
 
 les documents à intégrer. -->
 
-Ayant déjà un compte sur github, j'ai pu aller à l'étape d'installation de Git et Github CLI. Pour les installer, je dois installer git et github-cli. Il faudra ensuite que je crée un dépôt sur github "Projet-122" et que je le clone dans mon répertoire à l'aide des commandes CLI.
+Ayant déjà un compte sur GitHub, j'ai pu aller à l'étape d'installation de Git et GitHub CLI. Pour les installer, je dois installer git et GitHub CLI. Il faudra ensuite que je crée un dépôt sur GitHub "Projet-122" et que je le clone dans mon répertoire à l'aide des commandes CLI.
 
-Les documents à déposer sont dans le cahier des charges avec l'arborescence suivante:
+Les documents à déposer sont dans le cahier des charges avec l'arborescence suivante :
 ```text
 Projet-122/
 │ README.md
@@ -121,8 +135,6 @@ Projet-122/
     └── log_test.txt
 ```
 J'ai déjà un dossier prêt avec les fichiers de la séquence précédente. Il faudra donc que je copie ces fichiers dans le répertoire de mon dépôt.</br>
-
-
 
 
 ## 3. Décider
@@ -149,7 +161,7 @@ le README ;
 
 la publication des fichiers. -->
 
-Mon compte Github étant déjà prêt, j'ai simplement rajouté la 2FA pour sécuriser mon compte.
+Mon compte GitHub étant déjà prêt, j'ai simplement rajouté la 2FA pour sécuriser mon compte.
 J'ai ensuite installé les outils comme décrit dans le chapitre `Planifier` à l'aide du gestionnaire de paquets.
 
 J'ai eu plus de peine avec les commandes pour publier mon dossier. En effet, j'ai utilisé les commandes CLI pour copier mes fichiers, mais j'ai oublié de les renommer. Heureusement, le dépôt se met à jour avec la commande `git push`. Cette commande peut donc servir à déposer des fichiers et les mettre à jour.
@@ -170,6 +182,10 @@ que les liens éventuels fonctionnent.
 Documenter les erreurs rencontrées et les corrections apportées. -->
 
 Une fois les commandes de base maitrisées, j'ai ensuite testé de supprimer mon répertoire local pour ensuite le cloner depuis la plateforme web.
+
+POur vérifier l'accessibilité de mon dépôt, j'ai demandé à mes collègues de classe si mon dépôt était clonable par son URL. Comme il n'était pas visible en ligne (`404 error`), j'ai donc dû trouver une solution : pour être accessible par d'autres utilisateurs, le dépôt doit être public.
+
+
 ## 6. Évaluer
 <!-- Répondre aux questions :
 
@@ -182,3 +198,17 @@ Comment les ai-je résolues ?
 Comment pourrais-je améliorer mon dépôt ?
 
 Dans quel contexte professionnel pourrais-je réutiliser GitHub ? -->
+
+J'ai adoré mettre en place ce projet !</br>
+
+En plus d'avoir appris à utiliser un outil informatique puissant, je vois déjà les possibilités pour mes futurs projets.
+
+J'ai pu utiliser mon compte GitHub de manière active et utiliser facilement les outils CLI. 
+
+J'ai rencontré des problèmes au partage du dépôt, car je n'avais pas compris qu'un dépôt devait être public afin d'être vue en ligne. Ce problème a très vite été résolu (et sans IA !)
+
+Je pense que je peux améliorer ma façon d'utiliser GitHub en créant des branches à chaque version de mes projets, puis de fusionner les branches pour arriver vers la version finale.
+
+Dorénavant, j'espère pouvoir utiliser GitHub dans le cadre des cours pour rendre mes travaux, mais aussi en entreprise afin de pouvoir partager mes projets. J'espère ainsi pouvoir économiser de la place sur mon Onedrive personnel et, dans un futur proche, pouvoir m'en débarrasser et travailler uniquement avec des outils Open-source ou avec des solutions suisses qui respectent la loi suisse en matière de protection des données.
+
+Dans tous les cas, je m'en servirai dans le cadre de mes projets personnels. Notamment dans le cadre de l'installation de mon serveur pour centraliser la documentation.
